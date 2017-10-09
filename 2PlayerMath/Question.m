@@ -11,8 +11,8 @@
 @implementation Question
 -(instancetype)init{
     if(self = [super init]){
-        _num1 = arc4random_uniform(90) + 10;
-        _num2 = arc4random_uniform(90) + 10;
+        _num1 = arc4random_uniform(20) + 1;
+        _num2 = arc4random_uniform(20) + 1;
         _startTime = [NSDate date];
         _question = [NSString stringWithFormat:@"%d + %d = ",_num1,_num2];
         _answer = _num1 + _num2;

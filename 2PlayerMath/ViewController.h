@@ -12,6 +12,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *Player1Label;
 @property (weak, nonatomic) IBOutlet UILabel *Player2Label;
 @property (weak, nonatomic) IBOutlet UILabel *QuestionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
 
 
 @end

@@ -11,12 +11,18 @@
 #import "ScoreKeeper.h"
 #import "QuestionManager.h"
 #import "QuestionFactory.h"
+#import "Player.h"
 
 @interface GameModel : NSObject
 @property ScoreKeeper* score;
 @property Question *currentQ;
 @property QuestionManager *qManager;
 @property QuestionFactory *qFactory;
+
+@property (nonatomic, strong)Player *player1;
+@property (nonatomic, strong)Player *player2;
+@property (nonatomic, strong)Player *currentPlayer;
+
 -(NSString *)newQuestion;
 -(bool)checkAnaswer:(int)answer;
 

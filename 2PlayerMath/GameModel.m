@@ -20,7 +20,9 @@
         _score = [ScoreKeeper new];
         _qManager = [QuestionManager new];
         _qFactory = [QuestionFactory new];
-        //[self newMain];
+        _player1 = [Player new];
+        _player2 = [Player new];
+        _currentPlayer = self.player1;
     }
     return self;
 }
