@@ -24,6 +24,25 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
+- (IBAction)button1:(id)sender {
+}
+- (IBAction)button2:(id)sender {
+}
+- (IBAction)button3:(id)sender {
+}
+- (IBAction)button4:(id)sender {
+}
+- (IBAction)button5:(id)sender {
+}
+- (IBAction)button6:(id)sender {
+}
+- (IBAction)button7:(id)sender {
+}
+- (IBAction)button8:(id)sender {
+}
+- (IBAction)button9:(id)sender {
+}
+- (IBAction)button0:(id)sender {
+}
 
 @end
