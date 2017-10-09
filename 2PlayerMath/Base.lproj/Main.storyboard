@@ -133,6 +133,13 @@
                                     <action selector="submitButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1qD-It-TWO"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Player Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Bcl-T8-Q3Q">
+                                <rect key="frame" x="122" y="85" width="97" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Answer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="70M-k7-Max">
                                 <rect key="frame" x="122" y="204" width="131" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -148,6 +155,7 @@
                         <outlet property="Player2Label" destination="UwZ-Ep-KuJ" id="MHt-W8-HxE"/>
                         <outlet property="QuestionLabel" destination="t19-EV-dVw" id="7Cw-eO-99h"/>
                         <outlet property="answerLabel" destination="70M-k7-Max" id="0El-nt-0Qc"/>
+                        <outlet property="playerNameLabel" destination="Bcl-T8-Q3Q" id="qdM-yK-BGZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

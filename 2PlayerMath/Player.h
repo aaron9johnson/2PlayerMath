@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface Player : NSObject
+@property (nonatomic, strong) NSString *name;
 @property int lives;
 @end

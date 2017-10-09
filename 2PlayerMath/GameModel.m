@@ -21,12 +21,21 @@
         _qManager = [QuestionManager new];
         _qFactory = [QuestionFactory new];
         _player1 = [Player new];
+        self.player1.name = @"Player 1";
         _player2 = [Player new];
-        _currentPlayer = self.player1;
+        self.player2.name = @"Player 2";
+        _currentPlayer = self.player2;
+        
     }
     return self;
 }
 -(NSString *)newQuestion{
+    if ([self.currentPlayer isEqual:self.player1]) {
+        self.currentPlayer = self.player2;
+    } else {
+        self.currentPlayer = self.player1;
+    }
+    
     self.currentQ = [self.qFactory generateRandomQuestion];
     [self.qManager.questions addObject:self.currentQ];
     return self.currentQ.question;

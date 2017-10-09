@@ -22,11 +22,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    _gameModel = [GameModel new];
-    _Player1Label.text = [NSString stringWithFormat:@"%d", self.gameModel.player1.lives];
-    _Player2Label.text = [NSString stringWithFormat:@"%d", self.gameModel.player2.lives];
-    _QuestionLabel.text = [self.gameModel newQuestion];
-    _answerString = [NSMutableString new];
+    self.gameModel = [GameModel new];
+    self.Player1Label.text = [NSString stringWithFormat:@"%d", self.gameModel.player1.lives];
+    self.Player2Label.text = [NSString stringWithFormat:@"%d", self.gameModel.player2.lives];
+    self.QuestionLabel.text = [self.gameModel newQuestion];
+    self.answerString = [NSMutableString new];
+    self.playerNameLabel.text = self.gameModel.currentPlayer.name;
 }
 
 
@@ -92,6 +93,7 @@
     }
     self.answerString = [NSMutableString new];
     self.QuestionLabel.text = [self.gameModel newQuestion];
+    self.playerNameLabel.text = self.gameModel.currentPlayer.name;
 
 }
 
