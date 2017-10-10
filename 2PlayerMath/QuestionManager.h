@@ -11,5 +11,4 @@
 @interface QuestionManager : NSObject
 @property NSMutableArray *questions;
 -(instancetype)init;
--(NSString *)timeOutput;
 @end

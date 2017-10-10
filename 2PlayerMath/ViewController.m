@@ -85,16 +85,39 @@
     [self updateCurrentAnswer];
 }
 - (IBAction)submitButton:(id)sender {
+
     if([self.gameModel checkAnaswer:[self.answerString intValue]]) {
         self.answerLabel.text = @"Correct!";
+
     } else {
         self.answerLabel.text = @"Failure!";
-        
     }
+    [self updateLives];
+
+    if (self.gameModel.currentPlayer.lives < 1){
+        
+        [self.gameModel switchPlayer];
+        self.playerNameLabel.text = self.gameModel.currentPlayer.name;
+
+        
+        self.QuestionLabel.text = @"Is the Winner!";
+    } else {
+    
     self.answerString = [NSMutableString new];
+
     self.QuestionLabel.text = [self.gameModel newQuestion];
+
     self.playerNameLabel.text = self.gameModel.currentPlayer.name;
 
+    }
+    
+    
+}
+
+- (void)updateLives
+{
+    self.Player1Label.text = [NSString stringWithFormat:@"%d", self.gameModel.player1.lives];
+    self.Player2Label.text = [NSString stringWithFormat:@"%d", self.gameModel.player2.lives];
 }
 
 

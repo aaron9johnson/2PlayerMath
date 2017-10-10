@@ -7,19 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ScoreKeeper.h"
 
 @interface Question : NSObject
 @property int num1;
 @property int num2;
 @property int answer;
 @property NSString *question;
-@property NSDate *startTime;
-@property NSDate *endTime;
 
 
--(BOOL)checkAnswer:(int)answer score:(ScoreKeeper*)score;
+-(BOOL)checkAnswer:(int)answer;
 -(instancetype)init;
--(NSTimeInterval)answerTime;
--(void)generateQuestion;
 @end

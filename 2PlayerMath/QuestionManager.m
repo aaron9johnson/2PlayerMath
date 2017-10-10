@@ -16,11 +16,5 @@
     }
     return self;
 }
--(NSString *)timeOutput{
-    long temp = 0;
-    for(Question *any in _questions){
-        temp = temp + (long)[any answerTime];
-    }
-    return [NSString stringWithFormat:@"total time: %lds, average time: %lus",temp,temp/_questions.count];
-}
+
 @end
